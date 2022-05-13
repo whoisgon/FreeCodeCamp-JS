@@ -1,0 +1,7 @@
+
+// Configuración
+var a;
+var b;
+// Cambia solo el código debajo de esta línea
+a = 7;
+b=a;
