@@ -1,0 +1,10 @@
+// Configuración
+const testObj = {
+  "hat": "ballcap",
+  "shirt": "jersey",
+  "shoes": "cleats"
+};
+
+// Cambia solo el código debajo de esta línea
+const hatValue = testObj.hat;      // Cambia esta línea
+const shirtValue = testObj.shirt;    // Cambia esta línea
