@@ -1,0 +1,9 @@
+function randomFraction() {
+  // Cambia solo el código debajo de esta línea
+  var result = 0;
+while (result === 0) {
+    result = Math.random();
+  }
+  return result;
+  // Cambia solo el código encima de esta línea
+}
