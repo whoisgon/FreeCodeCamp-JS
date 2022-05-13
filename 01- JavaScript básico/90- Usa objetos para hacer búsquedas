@@ -1,0 +1,18 @@
+// Configuración
+function phoneticLookup(val) {
+  let result = "";
+  // Cambia solo el código debajo de esta línea
+  var name={
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank"
+  }
+  result= name[val];
+
+  // Cambia solo el código encima de esta línea
+  return result;
+}
+phoneticLookup("charlie");
