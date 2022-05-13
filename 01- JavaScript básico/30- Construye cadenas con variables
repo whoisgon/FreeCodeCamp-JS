@@ -1,0 +1,3 @@
+// Cambia solo el código debajo de esta línea
+const myName = " Gonzalo ";
+const myStr = "My name is"+ myName + "and I am well!";
