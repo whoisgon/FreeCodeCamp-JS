@@ -6,7 +6,7 @@ for (let i = 0; i < arr.length; i++) {
       newArr.push(arr[i]);
     }
   }
-  // Cambia solo el código encima de esta línea
+  // Cambia solo el código encima de esta linea
   return newArr;
 }
 
