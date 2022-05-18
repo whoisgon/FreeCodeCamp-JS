@@ -1,0 +1,30 @@
+
+function smallestCommons(arr) {
+  let primeFactors = {};
+  const [min, max] = arr.sort((a, b) => a - b);
+  for (let i = min; i <= max; i++) {
+    let primes = getPrimeFactors(i);
+    for (let j in primes) {
+      if (!primeFactors[j] || primes[j] > primeFactors[j]) {
+        primeFactors[j] = primes[j]
+      }
+    }
+  }
+  let multiple = 1;
+  for (let i in primeFactors) {
+    multiple *= i ** primeFactors[i]
+  }
+  return multiple;
+}
+function getPrimeFactors(num) {
+  const factors = {};
+  for (let prime = 2; prime <= num; prime++) {
+    while ((num % prime) === 0) {
+      factors[prime] = (factors[prime]) ? factors[prime] + 1 : 1;
+      num /= prime;
+    }
+  }
+  return factors;
+}
+
+smallestCommons([1, 5]);
